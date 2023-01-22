@@ -1,0 +1,11 @@
+#Dockerfile,Images,Containers
+
+
+FROM python:3.9.7
+
+ADD Bank_autheticate_prediction_api_swagger.py .
+
+RUN pip install -r requirement.txt 
+
+CMD ["python","./Bank_autheticate_prediction_api_swagger.py"]
+
